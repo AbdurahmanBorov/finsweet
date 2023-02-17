@@ -1,0 +1,123 @@
+.contact {
+    padding: 176px 0 160px;
+
+    &_body {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1199.98px) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+
+        @media (max-width: 767.98px) {
+            font-size: 32px;
+            line-height: 44px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 40px;
+    }
+
+    &__form {
+        margin-right: 110px;
+
+        @media (max-width: 1299.98px) {
+            margin-right: 50px;
+        }
+
+        @media (max-width: 1199.98px) {
+            margin-right: 0;
+        }
+    }
+
+    &__images {
+        margin-bottom: 50px;
+
+        img {
+            @media (min-width: 767.98px) {
+                width: 100%;
+            }
+
+            @media (max-width: 767.98px) {
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+
+    .form {
+    
+        &__inputs {
+            display: flex;
+            // color: #fff;
+
+            @media (max-width: 767.98px) {
+                flex-direction: column;
+            }
+        }
+
+        &__input {
+            background-color:  transparent;
+            padding-left: 30px;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            width: 297px;
+            height: 56px;
+            resize: none;
+            margin: 0 29px 24px 0;
+
+            @media (max-width: 767.98px) {
+                width: 100%;
+                margin: 0 0 24px 0;
+            }
+
+            &::placeholder {
+                color: #fff;
+            }
+        }
+
+        &__button {
+            font-weight: 500;
+            width: 213px;
+            height: 64px;
+            background: #27252D;
+            border: none;
+            color: #fff;
+
+            span {
+                padding-left: 12px;
+                color: #FFB577;
+            }
+        }
+
+        &__textarea {
+            background-color:  transparent;
+            color: #fff;
+            padding-left: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            width: 623px;
+            height: 160px;
+            resize: none;
+            padding-top: 15px;
+            
+            @media (max-width: 767.98px) {
+                width: 100%;
+            }
+
+            &::placeholder {
+                color: #fff;
+            }
+        }
+    
+        &__message {
+            margin-bottom: 32px;
+        }
+    }
+    
+}
