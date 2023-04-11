@@ -1,0 +1,29 @@
+
+.card {
+    max-width: 405px;
+    display: grid;
+    grid-template-rows: auto 1fr ;
+
+    img {
+        margin: auto;
+        max-width: 100%;
+    }
+
+    &__bottom {
+        max-width: 100%;
+        opacity: 0.87;
+        background: #1F1D21;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 24px 18px 32px;
+    }
+
+    &__name {
+    }
+
+    &__price {
+        padding-left: 15px;
+        color: $white;
+    }
+}
